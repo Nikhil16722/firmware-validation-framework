@@ -92,7 +92,7 @@ Open report.html in your browser.
 1.Python 3.x
 2.PyTest
 3.pytest-html
-4.Python logging module
+4.Python logging module"""
 
 🧠 Engineering Concepts Demonstrated
 
