@@ -83,27 +83,30 @@ pip install -r requirements.txt
 2️⃣ Run tests
 python -m pytest --html=report.html
 
-3️⃣ View report
+ ## 3️⃣ View report
 Open report.html in your browser.
 ![report preview](report.png)
 
-🛠 Technologies Used
+ ## 🛠 Technologies Used
+- Python 3.x
+- PyTest
+- pytest-html
+- Python logging module
 
-1.Python 3.x
-2.PyTest
-3.pytest-html
-4.Python logging module"""
+---
 
-🧠 Engineering Concepts Demonstrated
+ ## 🧠 Engineering Concepts Demonstrated
 
-1.Embedded system simulation
-2.Low-level system validation
-3.Log-based failure detection
-4.Automation framework design
-5.Structured test case implementation
-6.Debugging logging conflicts in test environments
+- Embedded system simulation
+- Low-level system validation
+- Log-based failure detection
+- Automation framework design
+- Structured test case implementation
+- Debugging logging conflicts in test environments
 
-📈 Sample Output
+---
+
+ ## 📈 Sample Output
 After execution:
 6 passed in 2.08s
 ![report preview](output.png)
@@ -111,13 +114,13 @@ After execution:
 
 An HTML test report is generated summarizing all test cases.
 
-🔍 Future Enhancements
+ ## 🔍 Future Enhancements
+- Add performance testing (response time validation)
+- Integrate CI/CD using GitHub Action.
+- Add parameterized test cases
+- Expand command coverage
+- Simulate hardware communication (UART mock)
 
-1.Add performance testing (response time validation)
-2.Integrate CI/CD using GitHub Action.
-3.Add parameterized test cases
-4.Expand command coverage
-5.Simulate hardware communication (UART mock)
 
 👨‍💻 Author Nikhil Lingala 
 
