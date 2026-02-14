@@ -22,26 +22,26 @@ To simulate real-world embedded software validation by:
 - Automating test execution and reporting
 
 ---
-
 ## 🏗 Project Architecture
 
+```
 EmbeddedTestHarness/
 │
 ├── device/
-│ └── firmware_simulator.py
+│   └── firmware_simulator.py
 │
 ├── logs/
-│ └── device.log
+│   └── device.log
 │
 ├── utils/
-│ └── log_validator.py
+│   └── log_validator.py
 │
 ├── tests/
-│ ├── test_commands.py
-│ └── test_system_validation.py
+│   ├── test_commands.py
+│   └── test_system_validation.py
 │
 └── requirements.txt
-
+```
 
 ---
 
