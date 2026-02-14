@@ -1,6 +1,5 @@
 # EmbeddedTestHarness
 Project --- "Embedded Firmware Validation & Low-Level System Test Automation Framework (Python + PyTest)"
-![Chatbot Preview](output.png)
 
 ## 📌 Overview
 
@@ -78,7 +77,7 @@ EmbeddedTestHarness/
 
 ### 1️⃣ Install dependencies
 
-```bash
+bash
 pip install -r requirements.txt
 
 2️⃣ Run tests
@@ -86,6 +85,7 @@ python -m pytest --html=report.html
 
 3️⃣ View report
 Open report.html in your browser.
+![report preview](report.png)
 
 🛠 Technologies Used
 
@@ -106,6 +106,8 @@ Open report.html in your browser.
 📈 Sample Output
 After execution:
 6 passed in 2.08s
+![report preview](output.png)
+
 
 An HTML test report is generated summarizing all test cases.
 
