@@ -1,5 +1,7 @@
 # EmbeddedTestHarness
 Project --- "Embedded Firmware Validation & Low-Level System Test Automation Framework (Python + PyTest)"
+![Chatbot Preview](ai-chatbot-agent/app/static/niki0.png)
+
 ## 📌 Overview
 
 EmbeddedTestHarness is a Python-based embedded firmware validation and low-level system test automation framework.  
