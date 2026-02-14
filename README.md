@@ -1,6 +1,6 @@
 # EmbeddedTestHarness
 Project --- "Embedded Firmware Validation & Low-Level System Test Automation Framework (Python + PyTest)"
-![Chatbot Preview](ai-chatbot-agent/app/static/niki0.png)
+![Chatbot Preview](output.png)
 
 ## 📌 Overview
 
