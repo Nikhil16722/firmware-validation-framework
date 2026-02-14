@@ -80,14 +80,14 @@ EmbeddedTestHarness/
 bash
 pip install -r requirements.txt
 
-2️⃣ Run tests
+## 2️⃣ Run tests
 python -m pytest --html=report.html
 
- ## 3️⃣ View report
+## 3️⃣ View report
 Open report.html in your browser.
 ![report preview](report.png)
 
- ## 🛠 Technologies Used
+## 🛠 Technologies Used
 - Python 3.x
 - PyTest
 - pytest-html
@@ -95,7 +95,7 @@ Open report.html in your browser.
 
 ---
 
- ## 🧠 Engineering Concepts Demonstrated
+## 🧠 Engineering Concepts Demonstrated
 
 - Embedded system simulation
 - Low-level system validation
@@ -106,7 +106,7 @@ Open report.html in your browser.
 
 ---
 
- ## 📈 Sample Output
+## 📈 Sample Output
 After execution:
 6 passed in 2.08s
 ![report preview](output.png)
@@ -114,7 +114,7 @@ After execution:
 
 An HTML test report is generated summarizing all test cases.
 
- ## 🔍 Future Enhancements
+## 🔍 Future Enhancements
 - Add performance testing (response time validation)
 - Integrate CI/CD using GitHub Action.
 - Add parameterized test cases
@@ -122,6 +122,6 @@ An HTML test report is generated summarizing all test cases.
 - Simulate hardware communication (UART mock)
 
 
-👨‍💻 Author Nikhil Lingala 
+## 👨‍💻 Author Nikhil Lingala 
 
 Developed as a demonstration of embedded firmware validation and automation testing principles.
