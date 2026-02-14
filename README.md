@@ -115,6 +115,6 @@ An HTML test report is generated summarizing all test cases.
 4.Expand command coverage
 5.Simulate hardware communication (UART mock)
 
-👨‍💻 Author
+👨‍💻 Author Nikhil Lingala 
 
 Developed as a demonstration of embedded firmware validation and automation testing principles.
