@@ -1,0 +1,11 @@
+2026-02-14 11:01:24,700 - INFO - Boot successful
+2026-02-14 11:01:24,700 - INFO - Status checked
+2026-02-14 11:01:24,701 - INFO - Boot successful
+2026-02-14 11:01:24,701 - INFO - Temperature read
+2026-02-14 11:01:24,701 - INFO - Boot successful
+2026-02-14 11:01:24,701 - ERROR - Unknown command received
+2026-02-14 11:01:24,704 - INFO - Boot successful
+2026-02-14 11:01:24,706 - INFO - Boot successful
+2026-02-14 11:01:24,706 - ERROR - Memory overflow detected
+2026-02-14 11:01:25,719 - INFO - Boot successful
+2026-02-14 11:01:25,719 - WARNING - Device reset initiated
