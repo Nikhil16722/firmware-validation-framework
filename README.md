@@ -1,127 +1,152 @@
-# EmbeddedTestHarness
-Project --- "Embedded Firmware Validation & Low-Level System Test Automation Framework (Python + PyTest)"
+# 🚀 EmbeddedTestHarness
+
+<div align="center">
+  <p><strong>Embedded Firmware Validation & Low-Level System Test Automation Framework</strong></p>
+  <img src="https://img.shields.io/badge/Python-3.x-blue.svg" alt="Python Version">
+  <img src="https://img.shields.io/badge/Testing-PyTest-yellow.svg" alt="PyTest">
+  <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License">
+</div>
+
+---
 
 ## 📌 Overview
 
-EmbeddedTestHarness is a Python-based embedded firmware validation and low-level system test automation framework.  
+**EmbeddedTestHarness** is a robust, Python-based test automation framework designed specifically for embedded firmware validation and low-level system testing.
 
-This project simulates an embedded device firmware and performs automated validation using PyTest. It demonstrates system-level testing, crash detection, log-based failure analysis, and structured test automation.
----
-Description
+This project simulates embedded device firmware to perform comprehensive automated validation using **PyTest**. It serves as a practical demonstration of system-level testing, crash detection, log-based failure analysis, and structured test automation methodologies.
 
-Embedded firmware test harness simulating command-response validation, crash detection, and log-based system verification using PyTest automation.
+> **Core Concept:** A simulated embedded firmware test harness capable of command-response validation, anomaly/crash detection, and log-based system verification.
+
 ---
 
 ## 🎯 Objective
 
-To simulate real-world embedded software validation by:
-
-- Testing firmware command-response behavior
-- Detecting crash conditions
-- Validating system reset functionality
-- Performing log-based failure analysis
-- Automating test execution and reporting
+To faithfully simulate real-world embedded software validation by:
+- ✅ **Testing** firmware command-response behavior under various conditions.
+- ✅ **Detecting** simulated hardware crashes and memory faults.
+- ✅ **Validating** system reset and recovery functionality.
+- ✅ **Performing** log-based failure analysis using keyword detection.
+- ✅ **Automating** test execution, assertions, and reporting for continuous integration readiness.
 
 ---
+
 ## 🏗 Project Architecture
 
-```
+A clean, modular architecture separating the device simulator, testing framework, and utilities:
+
+```text
 EmbeddedTestHarness/
-│
 ├── device/
-│   └── firmware_simulator.py
-│
+│   └── firmware_simulator.py      # Core firmware state machine & simulation logic
 ├── logs/
-│   └── device.log
-│
+│   └── device.log                 # Generated system logs for validation
 ├── utils/
-│   └── log_validator.py
-│
+│   └── log_validator.py           # Utility for parsing and validating log output
 ├── tests/
-│   ├── test_commands.py
-│   └── test_system_validation.py
-│
-└── requirements.txt
+│   ├── test_commands.py           # Unit tests for command-response validation
+│   └── test_system_validation.py  # Integration tests for system states & crash detection
+├── README.md                      # Project documentation
+└── requirements.txt               # Project dependencies
 ```
 
 ---
 
-## 🔧 Features
+## 🔧 Core Features
 
-- Embedded firmware simulation
-- Command-response validation (STATUS, RESET, GET_TEMP, CRASH, etc.)
-- Crash detection and memory error simulation
-- Log-based validation using keyword detection
-- Automated test execution using PyTest
-- HTML report generation
-- Structured test harness architecture
+- **Embedded Firmware Simulation:** Accurately mimics device states, boot sequences, and operational modes.
+- **Command-Response Validation:** Automated checks for commands like `STATUS`, `RESET`, `GET_TEMP`, `CRASH`, etc.
+- **Crash & Anomaly Detection:** Simulates memory errors and validates the system's ability to catch and log them.
+- **Log-Based Verification:** Analyzes `device.log` to confirm the presence of expected initialization, warning, and error events.
+- **Automated Execution & Reporting:** Leverages PyTest to run suites and generate detailed HTML reports.
 
 ---
 
 ## 🧪 Test Coverage
 
 ### Functional Testing
-- Command validation
-- Invalid command handling
-- Response verification
+- Command validation (validating expected outputs)
+- Invalid command handling (ensuring robust error responses)
+- Response verification and state transitions
 
 ### System-Level Validation
-- Boot validation
-- Crash detection
-- Reset logging verification
-- Warning and error detection from logs
+- Boot sequence validation
+- Crash and fault detection
+- Reset and recovery logging verification
+- Warning and critical error detection from system logs
 
 ---
 
-## 🚀 How to Run
+## 🚀 Getting Started
 
-### 1️⃣ Install dependencies
+Follow these steps to set up the environment and run the test harness locally.
 
-bash
+### 1️⃣ Install Dependencies
+
+Ensure you have Python 3.x installed, then run:
+
+```bash
 pip install -r requirements.txt
+```
 
-## 2️⃣ Run tests
+### 2️⃣ Run the Test Suite
+
+Execute the tests and generate an HTML report using PyTest:
+
+```bash
 python -m pytest --html=report.html
+```
 
-## 3️⃣ View report
-Open report.html in your browser.
+### 3️⃣ View the Test Report
+
+Open the generated `report.html` in your preferred web browser to view the detailed test results.
+
 ![report preview](report.png)
 
-## 🛠 Technologies Used
-- Python 3.x
-- PyTest
-- pytest-html
-- Python logging module
+---
+
+## 📈 Sample Output
+
+A successful test run will typically result in output similar to the following, alongside the generated HTML report summarizing all executed test cases.
+
+```text
+6 passed in 2.08s
+```
+
+![report preview](output.png)
+
+---
+
+## 🛠 Technologies & Libraries
+
+- **Python 3.x:** Core programming language.
+- **PyTest:** Primary testing framework.
+- **pytest-html:** Plugin for HTML report generation.
+- **Python `logging`:** Standard library module for log generation and parsing.
 
 ---
 
 ## 🧠 Engineering Concepts Demonstrated
 
-- Embedded system simulation
-- Low-level system validation
-- Log-based failure detection
-- Automation framework design
-- Structured test case implementation
-- Debugging logging conflicts in test environments
+- Embedded system simulation techniques
+- Low-level system validation strategies
+- Log-based failure detection and parsing
+- Scalable automation framework design
+- Structured test case implementation (Arrange, Act, Assert)
+- Managing and debugging logging conflicts in automated test environments
 
 ---
 
-## 📈 Sample Output
-After execution:
-6 passed in 2.08s
-![report preview](output.png)
-
-
-An HTML test report is generated summarizing all test cases.
-
 ## 🔍 Future Enhancements
-- Add performance testing (response time validation)
-- Integrate CI/CD using GitHub Action.
-- Add parameterized test cases
-- Expand command coverage
-- Simulate hardware communication (UART mock)
 
+- [ ] **Performance Testing:** Add response time validation and latency checks.
+- [ ] **CI/CD Integration:** Integrate with GitHub Actions for automated testing on push/pull requests.
+- [ ] **Data-Driven Testing:** Implement parameterized test cases for broader input coverage.
+- [ ] **Expanded Command Set:** Increase firmware command coverage to include edge cases.
+- [ ] **Hardware Mocking:** Simulate lower-level hardware communication protocols (e.g., UART/I2C mocks).
 
-## 👨‍💻 Author Nikhil Lingala 
+---
 
-Developed as a demonstration of embedded firmware validation and automation testing principles.
+## 👨‍💻 Author
+
+**Nikhil Lingala**
+*Developed as a comprehensive demonstration of embedded firmware validation and automation testing principles.*
